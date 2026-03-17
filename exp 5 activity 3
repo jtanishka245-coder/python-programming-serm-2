@@ -1,0 +1,21 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Mar 17 13:31:10 2026
+
+@author: tanishka
+"""
+
+inventory = {
+    "Apple": 50,
+    "Banana": 30
+}
+
+item = input("Enter item name: ")
+qty = int(input("Enter quantity to add: "))
+
+if item in inventory:
+    inventory[item] += qty
+else:
+    inventory[item] = qty
+
+print("Updated Inventory:", inventory)
