@@ -1,0 +1,19 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Mar 17 13:33:22 2026
+
+@author: tanishka
+"""
+
+[1:32 PM, 3/17/2026] Tanishka Jadhav: items = ["apple", "banana", "apple", "orange", "banana", "apple"]
+
+frequency = {}
+
+for item in items:
+    if item in frequency:
+        frequency[item] += 1
+    else:
+        frequency[item] = 1
+
+print("Item Frequency:", frequency)
+[1:33 PM, 3/17/2026] Tanishka Jadhav: 
