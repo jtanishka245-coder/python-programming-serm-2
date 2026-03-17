@@ -1,0 +1,14 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Mar 17 13:29:22 2026
+
+@author: tanishka
+"""
+
+class1 = {101, 102, 103, 104}
+class2 = {103, 104, 105, 106}
+
+# Common students
+common = class1.intersection(class2)
+
+print("Students present in both classes:", common)
