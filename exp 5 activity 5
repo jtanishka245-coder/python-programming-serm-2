@@ -1,0 +1,13 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Mar 17 13:34:43 2026
+
+@author: tanishka
+"""
+
+account1 = {"A", "B", "C", "D"}
+account2 = {"C", "D", "E", "F"}
+
+common_followers = account1 & account2
+
+print("Common Followers:", common_followers)
