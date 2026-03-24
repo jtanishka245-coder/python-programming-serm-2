@@ -1,0 +1,17 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Mar 24 07:36:35 2026
+
+@author: tanishka
+"""
+
+source = open("source.txt", "r")
+dest = open("backup.txt", "w")
+
+for line in source:
+    dest.write(line)
+
+source.close()
+dest.close()
+
+print("Data copied successfully.")
