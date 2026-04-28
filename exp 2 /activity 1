@@ -1,0 +1,12 @@
+# program for leap year
+"""
+Created on Tue Feb 17 13:32:10 2026
+
+@author Tanishka Jadhav
+"""
+
+year = int(input("Enter year: "))
+if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
+    print("Leap Year")
+else:
+    print("Not a Leap Year")
