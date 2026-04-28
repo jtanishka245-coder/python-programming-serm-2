@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Mar 17 13:24:57 2026
+
+@author: Tanishka
+"""
+
+library = {
+    "Math": 250,
+    "Science": 300,
+    "English": 200
+}
+
+# Update price
+book = input("Enter book name to update price: ")
+if book in library:
+    new_price = int(input("Enter new price: "))
+    library[book] = new_price
+else:
+    print("Book not found")
+
+print("Updated Library:", library)
