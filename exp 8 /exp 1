@@ -1,0 +1,30 @@
+# Python Program for Exception Handling
+try:
+    # ZeroDivisionError Example
+    num1 = int(input("Enter numerator: "))
+    num2 = int(input("Enter denominator: "))
+  
+    result = num1 / num2
+    print("Division Result =", result)
+
+    # IndexError Example
+    numbers = [10, 20, 30, 40]
+    
+    index = int(input("Enter index number to access list element: "))
+    print("Element at index", index, "is", numbers[index])
+
+# Handling division by zero
+except ZeroDivisionError:
+    print("Error: Division by zero is not allowed.")
+
+# Handling invalid index
+except IndexError:
+    print("Error: List index out of range.")
+
+# Executes if no exception occurs
+else:
+    print("Program executed successfully.")
+
+# Executes always
+finally:
+    print("Exception handling program completed.")
