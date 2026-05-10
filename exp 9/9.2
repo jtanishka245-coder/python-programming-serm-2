@@ -1,0 +1,22 @@
+# __*_ coding: utf_8_*_
+"""
+Created on tue Apr 28 13:10:44 2026
+@authour :tanishka
+"""
+
+# Python Program to Display Current Date, Time, and Weekday
+
+import datetime
+
+# Get current date and time
+current = datetime.datetime.now()
+
+# Display current date
+print("Current Date:", current.date())
+
+# Display current time
+print("Current Time:", current.time())
+
+# Display weekday
+weekday = current.strftime("%A")
+print("Current Weekday:", weekday)
