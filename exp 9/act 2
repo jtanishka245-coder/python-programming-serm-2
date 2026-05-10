@@ -1,0 +1,16 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Apr 28 13:10:44 2026
+
+@author: Tanishka 
+"""
+# Hospital Appointment System - Display Today's Date
+
+import datetime
+
+# Get current date
+today = datetime.date.today()
+
+# Display date
+print("Welcome to City Hospital Appointment System")
+print("Today's Date:", today)
