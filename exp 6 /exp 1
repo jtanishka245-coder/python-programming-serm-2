@@ -1,0 +1,36 @@
+# _*_ coding: utf_8_*_ 
+"""
+created on Tue Mar 24 07:25:46 2026
+
+@authour: Tanishka
+"""
+# File Handling Program in Python
+
+# Step 1: Create and Write into a file
+file = open("student.txt", "w")
+file.write("Name: Tanishka Jadhav\n")
+file.write("Course: Computer Engineering\n")
+file.close()
+
+print("Data written successfully.")
+
+# Step 2: Read the file
+file = open("student.txt", "r")
+content = file.read()
+print("\nReading File Content:")
+print(content)
+file.close()
+
+# Step 3: Append new data into the file
+file = open("student.txt", "a")
+file.write("College: XYZ Polytechnic\n")
+file.close()
+
+print("\nData appended successfully.")
+
+# Step 4: Read the updated file
+file = open("student.txt", "r")
+updated_content = file.read()
+print("\nUpdated File Content:")
+print(updated_content)
+file.close()
