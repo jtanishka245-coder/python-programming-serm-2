@@ -1,0 +1,28 @@
+# -*- coding: utf-8 -*
+"""
+@author: Tanishka 
+"""
+# Simple Streaming Application in Python
+
+import time
+import random
+
+# Simulated streaming data
+data_stream = ["Temperature", "Humidity", "Pressure", "Wind Speed"]
+
+print("Starting Stream Processing...\n")
+
+# Process stream continuously
+for i in range(10):
+    data = random.choice(data_stream)
+    value = random.randint(1, 100)
+
+    print("Received Data ->", data, ":", value)
+
+    # Simulated processing
+    if value > 70:
+        print("Alert:", data, "value is high!")
+
+    time.sleep(1)
+
+print("\nStreaming Completed.")
