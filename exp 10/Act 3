@@ -1,7 +1,4 @@
-# -*- coding: utf-8 -*
-"""
-@author: Tanishka 
-"""
+
 # Student Result Calculator App
 
 print("------ Student Result Calculator ------")
