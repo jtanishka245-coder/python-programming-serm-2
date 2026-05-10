@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Apr 28 13:10:44 2026
+@author: Tanishka 
+"""
+# Python Program to Calculate EMI using math module
+import math
+# Input values
+P = float(input("Enter Principal Amount: "))
+R = float(input("Enter Annual Interest Rate (%): "))
+N = int(input("Enter Loan Tenure in Months: "))
+# Monthly interest rate
+r = R / (12 * 100)
+# EMI Formula
+EMI = (P * r * math.pow((1 + r), N)) / (math.pow((1 + r), N) - 1)
+# Total payment and interest
+total_payment = EMI * N
+interest = total_payment - P
+# Display results
+print("\nMonthly EMI =", round(EMI, 2))
+print("Total Payment =", round(total_payment, 2))
+print("Total Interest =", round(interest, 2))
