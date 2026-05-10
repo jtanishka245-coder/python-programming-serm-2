@@ -1,0 +1,39 @@
+# -*- coding: utf-8 -*
+"""
+@author: Tanishka 
+"""
+# Student Result Calculator App
+
+print("------ Student Result Calculator ------")
+
+# Input student details
+name = input("Enter Student Name: ")
+
+# Input marks for 5 subjects
+sub1 = float(input("Enter marks for Subject 1: "))
+sub2 = float(input("Enter marks for Subject 2: "))
+sub3 = float(input("Enter marks for Subject 3: "))
+sub4 = float(input("Enter marks for Subject 4: "))
+sub5 = float(input("Enter marks for Subject 5: "))
+
+# Calculate total and percentage
+total = sub1 + sub2 + sub3 + sub4 + sub5
+percentage = (total / 500) * 100
+
+# Display result
+print("\n------ Result ------")
+print("Student Name:", name)
+print("Total Marks:", total)
+print("Percentage:", round(percentage, 2), "%")
+
+# Grade calculation
+if percentage >= 75:
+    print("Grade: Distinction")
+elif percentage >= 60:
+    print("Grade: First Class")
+elif percentage >= 50:
+    print("Grade: Second Class")
+elif percentage >= 35:
+    print("Grade: Pass")
+else:
+    print("Grade: Fail")
