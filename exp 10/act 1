@@ -1,0 +1,28 @@
+# -*- coding: utf-8 -*
+"""
+@author: Tanishka 
+"""
+# Grocery Bill Calculator
+
+print("------ Grocery Bill Calculator ------")
+
+total = 0
+
+# Number of items
+n = int(input("Enter number of items: "))
+
+# Input item details
+for i in range(n):
+    item = input("\nEnter item name: ")
+    price = float(input("Enter item price: "))
+    quantity = int(input("Enter quantity: "))
+
+    cost = price * quantity
+    total += cost
+
+    print("Cost of", item, "=", cost)
+
+# Display final bill
+print("\n-----------------------------------")
+print("Total Grocery Bill =", round(total, 2))
+print("-----------------------------------")
